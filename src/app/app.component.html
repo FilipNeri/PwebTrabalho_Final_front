@@ -1,0 +1,20 @@
+<!--
+  <app-insumos-cadastro></app-insumos-cadastro>
+  <app-insumos-pesquisa></app-insumos-pesquisa>
+  <app-produtos-cadastro></app-produtos-cadastro>
+-->
+<p-sidebar [(visible)]="sideBar">
+  <div class="ui-g">
+    <div class="ui-g-12 ui-fluid">
+      <h1 class="boxButton">Menu</h1>
+      <button type="button" (click)="sideBar = false" pButton label="Insumos" routerLink="/insumos" class="boxButton"></button>
+      <button type="button" (click)="sideBar = false" pButton label="Produtos" routerLink="/produtos" class="boxButton"></button>
+    </div>
+  </div>
+</p-sidebar>
+<button type="button" (click)="sideBar = true"
+pButton icon="pi pi-bars" class="boxButton"></button>
+
+
+<router-outlet></router-outlet>
+
